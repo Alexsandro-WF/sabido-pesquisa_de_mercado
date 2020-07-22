@@ -1,0 +1,642 @@
+
+:root {
+    --color-primary: #8bc34a;
+    --color-primary-light: #c5e1a5;
+    --color-secondary: #2e7d32;
+    --color-text-light: #fff;
+  }
+
+      body{
+          color: #757575;
+      }
+
+      @media only screen and (min-width: 993px){
+      .container {
+          width: 85%;
+      }
+      .modal {
+        width: 70%;
+      }
+      }
+
+
+      @media only screen and (min-width: 1280px){
+      .container {
+          width: 70%;
+      }
+      .modal {
+        width: 55%;
+      }
+      }
+        .border-card {
+          border-radius: 20px;
+          border: 0.5px solid #ddd;
+          -webkit-box-shadow: 0 0 0 0 rgba(0,0,0,0.14);
+          box-shadow: 0 0 0 0 rgba(0,0,0,0.14);
+          z-index: 1;
+        }
+        .border-radius{
+            border-radius: 20px;
+        }
+
+        .special-button , .special-button:active , .special-button:after , .special-button:focus {
+            border: 0.5px solid var(--color-primary-light);
+            border-radius: 1.2rem;
+            margin: 0 0.2rem;
+            color: var(--color-primary);
+            background-color: transparent;
+            box-shadow: 0 0 0 0 rgba(60, 64, 67, .30);
+        }
+
+        .special-button:hover {
+            border: none;
+            box-shadow: 0 2px 4px 0 rgba(60, 64, 67, .30), 0 2px 6px 2px rgba(60, 64, 67, .15);
+            transform: translate( 0.0rem , 0.2rem );
+            color: #fff;
+            background-color: var(--color-primary);
+        }
+
+        .special-button.big , .special-button.big i{
+          font-size: 1.2rem;
+        }
+
+        .special-button.invert{
+            color: #fff;
+            background-color: var(--color-primary);
+        }
+
+        .special-button.invert:hover{
+            box-shadow: 0 2px 3px 0 rgba(60, 64, 67, .30), 0 2px 4px 2px rgba(60, 64, 67, .15);
+        }
+
+        .shadow {
+            box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .30), 0 1px 3px 1px rgba(60, 64, 67, .15);
+        }
+        .hover-shadow:hover {
+          box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .30), 0 1px 3px 1px rgba(60, 64, 67, .15);
+      }
+
+        .right{
+            float: right;
+        }
+
+        nav .brand-logo {
+          position: absolute;
+          color: var(--color-primary);
+          display: inline-block;
+          font-size: 1.8rem;
+      }
+
+      nav {
+          -webkit-box-shadow: 0 0 0 0 rgba(0,0,0,0.14);
+          box-shadow: 0 0 0 0 rgba(0,0,0,0.14);
+      }
+
+      nav .sidenav-trigger {
+          margin: 0 ;
+      }
+
+      .sidenav li :hover {
+          color: var(--color-primary);
+          background-color: transparent;
+      }
+
+      .tabs {
+          width: auto;
+          overflow-x: scroll;
+      }
+
+      .tabs .tab a:hover, .tabs .tab a.active {
+          background-color: transparent;
+          color: var(--color-primary);
+      }
+
+      .tabs .tab a {
+          color: #757575;
+      }
+
+      .tabs .tab.disabled a, .tabs .tab.disabled a:hover {
+          color: var(--color-primary);
+      }
+
+      .tabs .indicator {
+          background-color: var(--color-primary);
+      }
+
+      .tabs .tab a:focus, .tabs .tab a:focus.active {
+          background-color: transparent;
+      }
+
+      .sidenav li>a:hover {
+          background-color: transparent;
+      }
+
+
+        /* label color */
+        .input-field label {
+          color: #757575;
+        }
+        /* label focus color */
+        .input-field input[type=text]:focus + label {
+          color: var(--color-primary);
+        }
+        /* label underline focus color */
+        .input-field input[type=text]:focus {
+          border-bottom: 1px solid var(--color-primary);
+          box-shadow: 0 1px 0 0 var(--color-primary);
+        }
+        /* icon prefix focus color */
+        .input-field .prefix.active {
+          color: var(--color-primary);
+        }
+
+
+        input:not([type]).validate+label,
+        input[type=text]:focus:not(.browser-default).validate+label,
+        input[type=password]:focus:not(.browser-default).validate+label,
+        input[type=email]:focus:not(.browser-default).validate+label,
+        input[type=url]:focus:not(.browser-default).validate+label,
+        input[type=time]:focus:not(.browser-default).validate+label,
+        input[type=date]:focus:not(.browser-default).validate+label,
+        input[type=datetime]:focus:not(.browser-default).validate+label,
+        input[type=datetime-local]:focus:not(.browser-default).validate+label,
+        input[type=tel]:focus:not(.browser-default).validate+label,
+        input[type=number]:focus:not(.browser-default).validate+label,
+        input[type=search]:focus:not(.browser-default).validate+label,
+        textarea.materialize-textarea:focus:not([readonly])+label {
+          color: var(--color-primary);
+        }
+
+        input:not([type]):focus,
+        input[type=text]:not(.browser-default):focus:not([readonly]),
+        input[type=password]:not(.browser-default):focus:not([readonly]),
+        input[type=email]:not(.browser-default):focus:not([readonly]),
+        input[type=url]:not(.browser-default):focus:not([readonly]),
+        input[type=time]:not(.browser-default):focus:not([readonly]),
+        input[type=date]:not(.browser-default):focus:not([readonly]),
+        input[type=datetime]:not(.browser-default):focus:not([readonly]),
+        input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+        input[type=tel]:not(.browser-default):focus:not([readonly]),
+        input[type=number]:not(.browser-default):focus:not([readonly]),
+        input[type=search]:not(.browser-default):focus:not([readonly]),
+        textarea.materialize-textarea:focus:not([readonly]) ,
+        .chips.focus {
+          border-bottom: 1px solid var(--color-primary);
+          box-shadow: 0 1px 0 0 var(--color-primary);
+        }
+
+        input.valid:not([type]),
+        input.valid:not([type]):focus,
+        input.valid[type=text]:not(.browser-default),
+        input.valid[type=text]:not(.browser-default):focus,
+        input.valid[type=password]:not(.browser-default),
+        input.valid[type=password]:not(.browser-default):focus,
+        input.valid[type=email]:not(.browser-default),
+        input.valid[type=email]:not(.browser-default):focus,
+        input.valid[type=url]:not(.browser-default),
+        input.valid[type=url]:not(.browser-default):focus,
+        input.valid[type=time]:not(.browser-default),
+        input.valid[type=time]:not(.browser-default):focus,
+        input.valid[type=date]:not(.browser-default),
+        input.valid[type=date]:not(.browser-default):focus,
+        input.valid[type=datetime]:not(.browser-default),
+        input.valid[type=datetime]:not(.browser-default):focus,
+        input.valid[type=datetime-local]:not(.browser-default),
+        input.valid[type=datetime-local]:not(.browser-default):focus,
+        input.valid[type=tel]:not(.browser-default),
+        input.valid[type=tel]:not(.browser-default):focus,
+        input.valid[type=number]:not(.browser-default),
+        input.valid[type=number]:not(.browser-default):focus,
+        input.valid[type=search]:not(.browser-default),
+        input.valid[type=search]:not(.browser-default):focus,
+        textarea.materialize-textarea.valid,
+        textarea.materialize-textarea.valid:focus,
+        .select-wrapper.valid>input.select-dropdown{
+          border-bottom: 1px solid var(--color-secondary);
+          -webkit-box-shadow: 0 1px 0 0 var(--color-secondary);
+          box-shadow: 0 1px 0 0 var(--color-secondary);
+      }
+
+      input:not([type]):focus.valid ~ label,
+      input[type=text]:not(.browser-default):focus.valid ~ label,
+      input[type=password]:not(.browser-default):focus.valid ~ label,
+      input[type=email]:not(.browser-default):focus.valid ~ label,
+      input[type=url]:not(.browser-default):focus.valid ~ label,
+      input[type=time]:not(.browser-default):focus.valid ~ label,
+      input[type=date]:not(.browser-default):focus.valid ~ label,
+      input[type=datetime]:not(.browser-default):focus.valid ~ label,
+      input[type=datetime-local]:not(.browser-default):focus.valid ~ label,
+      input[type=tel]:not(.browser-default):focus.valid ~ label,
+      input[type=number]:not(.browser-default):focus.valid ~ label,
+      input[type=search]:not(.browser-default):focus.valid ~ label,
+      textarea.materialize-textarea:focus.valid ~ label
+      {color: var(--color-primary);}
+
+      input:not([type]):focus.invalid ~ label,
+      input[type=text]:not(.browser-default):focus.invalid ~ label,
+      input[type=password]:not(.browser-default):focus.invalid ~ label,
+      input[type=email]:not(.browser-default):focus.invalid ~ label,
+      input[type=url]:not(.browser-default):focus.invalid ~ label,
+      input[type=time]:not(.browser-default):focus.invalid ~ label,
+      input[type=date]:not(.browser-default):focus.invalid ~ label,
+      input[type=datetime]:not(.browser-default):focus.invalid ~ label,
+      input[type=datetime-local]:not(.browser-default):focus.invalid ~ label,
+      input[type=tel]:not(.browser-default):focus.invalid ~ label,
+      input[type=number]:not(.browser-default):focus.invalid ~ label,
+      input[type=search]:not(.browser-default):focus.invalid ~ label,
+      textarea.materialize-textarea:focus.invalid ~ label{color:#F44336}
+
+      .mdl-button.previous:hover:not(.disabled) , .mdl-button.next:hover:not(.disabled) {
+          background-color: var(--color-primary);
+      }
+        .datepicker-date-display {
+          background-color: var(--color-primary);
+      }
+      .datepicker-table td.is-today {
+          color: var(--color-primary);
+      }
+      .datepicker-table td.is-selected {
+          background-color: var(--color-primary);
+          color: #fff;
+      }
+
+      .datepicker-cancel, .datepicker-clear, .datepicker-today, .datepicker-done {
+          color: var(--color-primary);
+      }
+
+      .datepicker-day-button:active , .datepicker-day-button:focus {
+      background-color: var(--color-primary-light);
+          color: #fff;
+      }
+
+      .month-prev:active, .month-next:active, .month-prev:focus, .month-next:focus {
+          background-color: transparent;
+      }
+
+      .month-prev:active>svg, .month-next:active>svg, .month-prev:focus>svg, .month-next:focus>svg {
+          fill: var(--color-primary);
+      }
+
+      .dropdown-content li>a, .dropdown-content li>span {
+          color: var(--color-primary);
+      }
+
+      .card .card-action {
+          background-color: transparent;
+      }
+
+      .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+          color: var(--color-primary);
+      }
+
+      .action-div{
+          border-top: 0.5px solid #ddd;
+      }
+
+      .action-div > *{
+          margin-top: 1rem;
+      }
+
+      .special-header{
+          background-color: var(--color-primary);
+          color: #fff;
+          fill: #fff;
+          box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .30), 0 1px 3px 1px rgba(60, 64, 67, .15);
+          border-radius: 5rem;
+          width: fit-content;
+          padding: 8px 12px 8px 12px;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: -2rem;
+          z-index: 99;
+          position: relative;
+      }
+
+      .special-header > .material-icons {
+          font-size: 7rem;
+      }
+
+      .special-header-transparent{
+          background-color: transparent;
+          color: #fff;
+          fill: #fff;
+          box-shadow: unset;
+      }
+
+      .special-header-invert{
+          background-color: #fff;
+          color: var(--color-primary);
+          fill: var(--color-primary);
+          width: fit-content;
+          padding: 8px 12px 8px 12px;
+          margin-left: auto;
+          margin-right: auto;
+          z-index: 99;
+          position: relative;
+          box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .30), 0 1px 3px 1px rgba(60, 64, 67, .15);
+          border-radius: 5rem;
+      }
+
+      .special-header-invert > .material-icons {
+          font-size: 7rem;
+      }
+
+      button.special-header-invert {
+          height: unset;
+          line-height: unset;
+      }
+
+      button.special-header-invert i {
+      line-height: initial;
+      }
+
+      button.special-header-invert:hover , button.special-header-invert:active , button.special-header-invert:after , button.special-header-invert:focus {
+          background-color: var(--color-primary);
+          color: #fff;
+          fill: #fff;
+          height: unset;
+          line-height: unset;
+      }
+
+      input:-internal-autofill-selected {
+          background-color: transparent !important;
+          background-image: none !important;
+          color: rgb(0, 0, 0) !important;
+      }
+
+      .timepicker-digital-display {
+          background-color: var(--color-primary);
+      }
+
+      .timepicker-close , .timepicker-clear {
+          color: var(--color-primary);
+      }
+
+      .timepicker-tick:hover {
+          background-color: var(--color-primary-light);
+      }
+
+      .timepicker-canvas line , .timepicker-canvas-bearing , .timepicker-canvas-bg {
+          stroke: var(--color-primary);
+          fill: var(--color-primary);
+      }
+
+
+      ul.stepper.horizontal .step.active .step-title::before, ul.stepper.horizontal .step.done .step-title::before {
+          background-color: var(--color-primary);
+      }
+
+
+      ul.stepper.horizontal::before {
+          box-shadow:  0 1px 3px 0 rgba(0,0,0,.1);
+      }
+
+      ul.stepper.horizontal .step .step-content {
+          overflow-y: unset;
+          overflow-x: unset;
+      }
+
+      .input-field {
+          margin-top: unset;
+      }
+
+      [type="checkbox"]:checked+span:not(.lever):before {
+          border-right: 2px solid var(--color-primary);
+          border-bottom: 2px solid var(--color-primary);
+      }
+
+      .chip {
+          background-color: var(--color-primary-light);
+      }
+
+      .chip:active , .chip:focus {
+          background-color: var(--color-primary);
+      }
+
+      .progress {
+          background-color: var(--color-primary-light);
+      }
+
+      .progress .determinate {
+          background-color: var(--color-primary);
+      }
+
+      div.dataTables_wrapper div.mdl-grid.dt-table>div.mdl-cell{
+          overflow-x: scroll;
+      }
+
+      .mdl-data-table {
+          border: unset;
+      }
+
+      .mdl-button{
+          border-radius: 5rem;
+          min-width: unset;
+          margin-right: 0.3rem;
+          margin-left: 0.3rem;
+      }
+
+      .mdl-button:hover ,
+      .mdl-button:active ,
+      .mdl-button:focus {
+          background: var(--color-primary-light);
+          color: var(--color-text-light);
+      }
+
+      .mdl-button--raised.mdl-button--colored {
+          background: var(--color-primary);
+          color: var(--color-text-light);
+          border-radius: 5rem;
+          min-width: unset;
+          box-shadow: 0 0 0 0 rgba(60, 64, 67, .30);
+      }
+
+      .mdl-button--raised.mdl-button--colored:hover ,
+      .mdl-button--raised.mdl-button--colored:active ,
+      .mdl-button--raised.mdl-button--colored:focus {
+          background: var(--color-primary);
+          color: var(--color-text-light);
+          border-radius: 5rem;
+          min-width: unset;
+          box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .30), 0 1px 3px 1px rgba(60, 64, 67, .15);
+      }
+
+      .select-wrapper input.select-dropdown:focus {
+          border-bottom: 1px solid var(--color-primary);
+      }
+
+      .dropdown-content , .modal {
+          border-radius: 1rem;
+      }
+
+      .modal , .modal .modal-footer{
+          background: #fff;
+      }
+
+      .modal.bottom-sheet{
+          border-radius: 2rem 2rem 0 0;
+          margin-left: auto;
+          margin-right: auto;
+      }
+
+      .modal.bottom-sheet.small-sheet{
+          background: #fff;
+          color: var(--color-primary);
+          max-width: 1080px;
+          margin-left: auto;
+          margin-right: auto;
+      }
+
+      .modal.small-sheet .modal-footer {
+          background-color: #fff;
+      }
+
+
+      /* width */
+      ::-webkit-scrollbar {
+          width: 10px;
+          height: 10px;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+          /*box-shadow: inset 0 0 2px #e0e0e0;
+          border-radius: 10px;
+          border: solid 1px transparent;*/
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+          background: rgba(200,200,200,.3);
+          border-radius: 10px;
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+          background: rgba(200,200,200,.8);
+      }
+
+      .tabs::-webkit-scrollbar {
+          display: none;
+      }
+
+      .sub-header-text{
+          font-size: 20px;
+          font-weight: 300;
+      }
+
+      .header-text{
+          font-size: 20px;
+          font-weight: 500;
+      }
+      @media only screen and (min-width: 601px){
+          .internal-card{
+              margin: 1%;
+              width: 49% !important;
+          }
+      }
+
+      .primary-bg{background-color: var(--color-primary);}
+      .primary-light-bg{background-color: var(--color-primary-light);}
+
+        .textcolor-red{color:red}
+        .textcolor-green{color:#8bc34a}
+        .textcolor-light-gray{color:#818a91}
+        .textcolor-gray{color:#777}
+        .textcolor-white{color:#fff}
+        .textcolor-black{color:#000}
+        .textcolor-primary{color:var(--color-primary)}
+        .textcolor-secondary{color:var(--color-secondary)}
+
+        .margin-unset{margin:unset}
+        .padding-unset{padding:unset}
+
+        .padding-top-75{padding-top:75px}
+        .padding-top-20{padding-top:20px}
+        .padding-top-10{padding-top:10px}
+        .padding-top-30{padding-top:30px}
+        .padding-top-50{padding-top:50px}
+        .padding-bottom-50{padding-bottom:50px}
+        .padding-bottom-container{padding-bottom:50px}
+        .padding-bottom-30{padding-bottom:30px}
+        .padding-bottom-20{padding-bottom:20px}
+        .padding-bottom-15{padding-bottom:15px}
+        .padding-bottom-10{padding-bottom:10px}
+        .padding-left-30{padding-left:30px}
+        .padding-left-20{padding-left:20px}
+        .padding-left-10{padding-left:10px}
+        .padding-10{padding:10px}
+        .padding-20{padding:20px}
+        .margin-20{margin:20px}
+        .padding-30{padding:30px}
+        .padding-right-10{padding-right:10px}
+        .padding-right-20{padding-right:20px}
+        .padding-right-30{padding-right:30px}
+        .margin-top-20{margin-top: 20px}
+        .margin-left-20{margin-left: 20px}
+        .margin-left-10{margin-left: 10px}
+        .margin-bottom-20{margin-bottom: 20px}
+        .margin-top-neg-30{margin-top:-30px}
+        .margin-top-neg-10{margin-top:-10px}
+        .margin-bottom-1-5{margin-bottom: 1.5rem;}
+        .padding-0{padding:0}
+        .padding-10{padding:10px}
+        .margin-center{margin-left: auto; margin-right: auto}
+
+        .mdl-data-table th {
+            min-width: 130px;
+        }
+
+      /* Materialize Preloader */
+      .preloader-background {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #fff;
+
+          position: fixed;
+          z-index: 100;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+      }
+
+      .progress .indeterminate {
+          background-color: var(--color-primary);
+      }
+
+      .spinner-primary {
+          border-color: var(--color-primary);
+      }
+
+      tr.selected {
+          background-color: var(--color-primary-light);
+      }
+
+      [type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:after {
+    background-color: var(--color-primary);
+}
+
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, [type="radio"].with-gap:checked+span:after {
+    border: 2px solid var(--color-primary);
+}
+
+
+.container-iframe {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
